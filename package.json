@@ -1,9 +1,17 @@
 {
     "name": "react-bubble-preloader",
-    "version": "1.1.0",
+    "version": "1.2.0",
     "description": "react preloader component",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/ivanzusko/react-bubble-preloader.git"
+    },
     "author": "Ivan Zusko <ivan.zusko@gmail.com>",
     "license": "MIT",
+    "bugs": {
+        "url": "https://github.com/ivanzusko/react-bubble-preloader/issues"
+    },
+    "homepage": "https://github.com/ivanzusko/react-bubble-preloader",
     "keywords": [
         "react-component",
         "react",

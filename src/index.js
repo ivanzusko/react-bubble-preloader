@@ -67,4 +67,15 @@ class BubblePreloader extends React.Component {
     }
 };
 
+BubblePreloader.defaultProps = {
+    animation: {
+        speed: 1.7
+    },
+    bubble: {
+        width: '1.5rem',
+        height: '1.5rem'
+    },
+    colors: ['red','blue','green']
+}
+
 export default BubblePreloader;
