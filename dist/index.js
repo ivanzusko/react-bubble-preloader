@@ -137,5 +137,16 @@
 
     ;
 
+    BubblePreloader.defaultProps = {
+        animation: {
+            speed: 1.7
+        },
+        bubble: {
+            width: '1.5rem',
+            height: '1.5rem'
+        },
+        colors: ['rgb(255, 170, 0)', 'rgb(255, 121, 0)', 'rgb(255, 80, 0)']
+    };
+
     exports.default = BubblePreloader;
 });

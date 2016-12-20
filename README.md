@@ -23,7 +23,8 @@ import BubblePreloader from 'react-bubble-preloader';
 ```
 
 ## Customization
-All props are not required, only if you want to customize
+All props are not required, only if you want to customize:
+
 Property | Type | Description
 :---|:---|:---
 `bubble` | object | with `width` and `height` keys, which accept any kind of size units
