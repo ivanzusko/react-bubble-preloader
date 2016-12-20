@@ -75,7 +75,7 @@ BubblePreloader.defaultProps = {
         width: '1.5rem',
         height: '1.5rem'
     },
-    colors: ['red','blue','green']
+    colors: ['rgb(255, 170, 0)','rgb(255, 121, 0)','rgb(255, 80, 0)']
 }
 
 export default BubblePreloader;
