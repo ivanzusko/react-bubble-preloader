@@ -73,8 +73,8 @@
         if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass;
     }
 
-    var BubblePreloader = function (_React$Component) {
-        _inherits(BubblePreloader, _React$Component);
+    var BubblePreloader = function (_Component) {
+        _inherits(BubblePreloader, _Component);
 
         function BubblePreloader() {
             _classCallCheck(this, BubblePreloader);
@@ -121,10 +121,11 @@
                         backgroundColor: this.props.colors[2]
                     }
                 };
+                var combinedClassName = this.props.className ? 'bubble-loader ' + this.props.className : 'bubble-loader';
 
                 return _react2.default.createElement(
                     'div',
-                    { className: 'bubble-loader' },
+                    { className: combinedClassName },
                     _react2.default.createElement('div', { style: Object.assign({}, styles.bubble, styles.bubble1), className: 'bubble1' }),
                     _react2.default.createElement('div', { style: Object.assign({}, styles.bubble, styles.bubble2), className: 'bubble2' }),
                     _react2.default.createElement('div', { style: Object.assign({}, styles.bubble, styles.bubble3), className: 'bubble3' })
@@ -133,7 +134,7 @@
         }]);
 
         return BubblePreloader;
-    }(_react2.default.Component);
+    }(_react.Component);
 
     ;
 

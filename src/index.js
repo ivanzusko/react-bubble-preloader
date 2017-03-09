@@ -2,13 +2,14 @@
  * BubblePreloader
  */
 
-import React from 'react';
+import React, { Component, PropTypes } from 'react';
 
-class BubblePreloader extends React.Component {
+class BubblePreloader extends Component {
     propTypes: {
-        colors : React.PropTypes.array,
-        bubble: React.PropTypes.object,
-        animation: React.PropTypes.object,
+        className: PropTypes.string,
+        colors: PropTypes.array,
+        bubble: PropTypes.object,
+        animation: PropTypes.object,
     }
     componentDidMount() {
         const keyframesStyle = `
@@ -54,11 +55,12 @@ class BubblePreloader extends React.Component {
             },
             bubble3: {
                 backgroundColor: this.props.colors[2],
-            }
-        }
+            },
+        };
+        const combinedClassName = this.props.className ? `bubble-loader ${this.props.className}` : 'bubble-loader';
 
         return (
-            <div className="bubble-loader">
+            <div className={combinedClassName}>
                 <div style={Object.assign({}, styles.bubble, styles.bubble1)} className="bubble1"></div>
                 <div style={Object.assign({}, styles.bubble, styles.bubble2)} className="bubble2"></div>
                 <div style={Object.assign({}, styles.bubble, styles.bubble3)} className="bubble3"></div>
@@ -69,13 +71,13 @@ class BubblePreloader extends React.Component {
 
 BubblePreloader.defaultProps = {
     animation: {
-        speed: 1.7
+        speed: 1.7,
     },
     bubble: {
         width: '1.5rem',
-        height: '1.5rem'
+        height: '1.5rem',
     },
-    colors: ['rgb(255, 170, 0)','rgb(255, 121, 0)','rgb(255, 80, 0)']
+    colors: ['rgb(255, 170, 0)','rgb(255, 121, 0)','rgb(255, 80, 0)'],
 }
 
 export default BubblePreloader;
