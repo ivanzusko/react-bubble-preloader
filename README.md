@@ -1,6 +1,9 @@
 # React Bubble Preloader
 React component which provides nice and simple preloader
 
+## Demo
+https://ivanzusko.github.io/react-bubble-preloader/
+
 ## Installation
 Just run
 ```javascript
