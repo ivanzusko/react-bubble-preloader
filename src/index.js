@@ -2,15 +2,17 @@
  * BubblePreloader
  */
 
-import React, { Component, PropTypes } from 'react';
+import React, { Component } from 'react';
+import PropTypes from 'prop-types';
+
+const propTypes = {
+    className: PropTypes.string,
+    colors: PropTypes.array,
+    bubble: PropTypes.object,
+    animation: PropTypes.object,
+};
 
 class BubblePreloader extends Component {
-    propTypes: {
-        className: PropTypes.string,
-        colors: PropTypes.array,
-        bubble: PropTypes.object,
-        animation: PropTypes.object,
-    }
     componentDidMount() {
         const keyframesStyle = `
             @keyframes bouncedelay {
@@ -69,6 +71,7 @@ class BubblePreloader extends Component {
     }
 };
 
+BubblePreloader.propTypes = propTypes;
 BubblePreloader.defaultProps = {
     animation: {
         speed: 1.7,

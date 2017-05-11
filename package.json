@@ -17,10 +17,12 @@
         "react",
         "preloader"
     ],
+    "main": "dist/index.js",
     "scripts": {
-        "prepublish": "babel --plugins transform-es2015-modules-umd src --ignore __tests__ --out-dir ./dist",
+        "clean": "rm -rf dist",
         "lint": "eslint ./src",
-        "lintfix": "eslint ./src --fix"
+        "lintfix": "eslint ./src --fix",
+        "prepublish": "npm run clean && babel --plugins transform-es2015-modules-umd src --ignore __tests__ --out-dir ./dist"
     },
     "devDependencies": {
         "babel-cli": "^6.6.4",
@@ -40,8 +42,9 @@
         "jsdom": "^8.1.0",
         "mocha": "^2.4.5",
         "nodemon": "^1.9.1",
-        "react-addons-test-utils": "^15.0.0",
+        "prop-types": "^15.5.9",
         "react": "^15.0.0",
+        "react-addons-test-utils": "^15.0.0",
         "react-dom": "^15.0.0",
         "sinon": "^1.17.3"
     },
