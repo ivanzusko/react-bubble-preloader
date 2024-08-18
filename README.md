@@ -18,11 +18,16 @@ yarn add react-bubble-preloader
 ```javascript
 import BubblePreloader from 'react-bubble-preloader';
 
+// Basic usage with Zero configuration
+<BubblePreloader />
+
+// You can add any of those props:
 <BubblePreloader
     bubble={{ width: '2rem', height: '2rem' }}
     animation={{ speed: 2 }}
     className="your-own-class__if-you-need-it"
     colors={['red', 'blue', 'yellow']}
+    style={{ border: 'solid 1px red' }}
 />
 ```
 
