@@ -11,6 +11,11 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ### Added
 
 - Typescript support
+- `ts-standard`
+
+### Removed
+
+- `babel` and `eslint` related packages.
 
 ---
 
