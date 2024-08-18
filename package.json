@@ -1,6 +1,6 @@
 {
   "name": "react-bubble-preloader",
-  "version": "2.0.0",
+  "version": "3.0.0",
   "description": "react preloader component",
   "repository": {
     "type": "git",
@@ -22,19 +22,18 @@
     "clean": "rm -rf dist",
     "lint": "eslint ./src",
     "lintfix": "eslint ./src --fix",
-    "prepublish": "npm run clean && babel --plugins @babel/plugin-transform-modules-umd src --out-dir ./dist"
+    "prepublish": "npm run clean && tsc"
   },
   "devDependencies": {
-    "@babel/cli": "^7.24.8",
-    "@babel/core": "^7.25.2",
-    "@babel/eslint-parser": "^7.25.1",
-    "@babel/plugin-transform-modules-umd": "^7.24.7",
-    "@babel/preset-env": "^7.25.3",
-    "@babel/preset-react": "^7.24.7",
+    "@types/jest": "^29.5.12",
+    "@types/node": "^22.4.0",
+    "@types/react": "^18.3.3",
+    "@types/react-dom": "^18.3.0",
     "eslint": "9.9.0",
     "eslint-plugin-react": "^7.35.0",
     "react": "^18.3.1",
-    "react-dom": "^18.3.1"
+    "react-dom": "^18.3.1",
+    "typescript": "^5.5.4"
   },
   "peerDependencies": {
     "react": "^18.3.1",

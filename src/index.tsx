@@ -2,7 +2,7 @@
  * BubblePreloader
  */
 
-import React from 'react';
+import React, { CSSProperties, useEffect } from 'react';
 
 const BubblePreloader = ({
     className,
@@ -15,8 +15,19 @@ const BubblePreloader = ({
     },
     colors = ['rgb(255, 170, 0)','rgb(255, 121, 0)','rgb(255, 80, 0)'],
     style,
+}: {
+    className?: string;
+    animation?: {
+        speed: number;
+    };
+    bubble?: {
+        width?: string|number;
+        height?: string|number;
+    };
+    colors?: string[];
+    style?: CSSProperties;
 }) => {
-    React.useEffect(() => {
+    useEffect(() => {
         const keyframesStyle = `
             @keyframes bouncedelay {
                 0%, 80%, 100% {
@@ -35,12 +46,12 @@ const BubblePreloader = ({
         addStyles(keyframesStyle);
     }, [])
 
-    const addStyles = (style) => {
+    const addStyles = (style: string) => {
         const styleElement = document.createElement('style');
-        let styleSheet = null;
+        let styleSheet;
 
         document.head.appendChild(styleElement);
-        styleSheet = styleElement.sheet;
+        styleSheet = styleElement.sheet!;
         styleSheet.insertRule(style, styleSheet.cssRules.length);
     }
 
