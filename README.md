@@ -29,13 +29,20 @@ import BubblePreloader from 'react-bubble-preloader';
 ## Customization
 All props are not required, only if you want to customize:
 
-Property | Type | Description
-:---|:---|:---
-`animation` | object | with `speed` key
-`bubble` | object | with `width` and `height` keys, which accept any kind of size units
-`className` | string | you can pass your custom class to the preloader, but bubbles still will have classes `bubble1` , `bubble2` , `bubble3`
-`color` | array | which accepts three colors which will be used one by one as background colors of the bubbles
-`style` | object | which accepts normal object with styles as it could be done with normal DOM elements.
+```ts
+{
+  className?: string // Accepts your custom class to the preloader, but bubbles still will have classes bubble1 , bubble2 , bubble3
+  animation?: {
+    speed: number
+  }
+  bubble?: { // Allows to change the size of the bubbles
+    width?: string | number
+    height?: string | number
+  }
+  colors?: string[] // Accepts three colors which will be used one by one as background colors of the bubbles
+  style?: CSSProperties // Accepts normal object with styles as it could be done with normal DOM elements.
+}
+```
 
 ## CHANGELOG
 [CHANGELOG.md](https://github.com/ivanzusko/react-bubble-preloader/blob/main/CHANGELOG.md)
