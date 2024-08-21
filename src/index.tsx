@@ -80,6 +80,7 @@ const BubblePreloader = ({
     <div
       className={combinedClassName}
       style={style}
+      data-testid='bubble-loader'
     >
       <div style={Object.assign({}, styles.bubble, styles.bubble1)} className='bubble1' />
       <div style={Object.assign({}, styles.bubble, styles.bubble2)} className='bubble2' />

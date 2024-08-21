@@ -7,16 +7,6 @@ module.exports = [
     plugins: {
       react
     },
-    languageOptions: {
-      parserOptions: {
-        ecmaFeatures: {
-          jsx: true
-        }
-      }
-      // globals: {
-      //     ...globals.browser,
-      // },
-    },
     rules: {
       // ... any rules you want
       'react/jsx-uses-react': 'error',
