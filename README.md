@@ -1,4 +1,8 @@
 # React Bubble Preloader
+
+[![NPM Version](https://img.shields.io/npm/v/react-bubble-preloader.svg?style=for-the-badge)](https://www.npmjs.com/package/react-bubble-preloader)
+[![](https://img.shields.io/npm/dm/react-bubble-preloader.svg?style=for-the-badge)](https://www.npmjs.com/package/react-bubble-preloader)
+
 React component which provides nice and simple preloader
 
 ## Demo
