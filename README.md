@@ -1,9 +1,13 @@
 # React Bubble Preloader
 
 [![NPM Version](https://img.shields.io/npm/v/react-bubble-preloader.svg?style=for-the-badge)](https://www.npmjs.com/package/react-bubble-preloader)
-[![](https://img.shields.io/npm/dm/react-bubble-preloader.svg?style=for-the-badge)](https://www.npmjs.com/package/react-bubble-preloader)
+[![](https://img.shields.io/npm/dt/react-bubble-preloader.svg?style=for-the-badge)](https://www.npmjs.com/package/react-bubble-preloader)
+[![](https://img.shields.io/github/issues/ivanzusko/react-bubble-preloader.svg?style=for-the-badge)](https://github.com/ivanzusko/react-bubble-preloader/issues)
+[![](https://img.shields.io/github/issues-closed-raw/ivanzusko/react-bubble-preloader.svg?style=for-the-badge)](https://github.com/ivanzusko/react-bubble-preloader/issues)
+[![](https://img.shields.io/npm/l/react-bubble-preloader.svg?style=for-the-badge)](https://opensource.org/licenses/MIT)
 
 React component which provides nice and simple preloader
+
 
 ## Demo
 https://ivanzusko.github.io/react-bubble-preloader/
