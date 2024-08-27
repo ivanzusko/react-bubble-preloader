@@ -20,12 +20,15 @@
   "main": "dist/index.js",
   "scripts": {
     "clean": "rm -rf dist",
-    "test": "jest --watch",
+    "test": "jest",
+    "test:w": "jest --watch",
     "test:cov": "jest --coverage",
     "lint": "ts-standard --fix",
-    "prepublish": "npm run clean && tsc"
+    "compile": "npm run clean && tsc",
+    "prepublish": "npm run test && npm run clean && tsc"
   },
   "pre-commit": [
+    "test",
     "lint"
   ],
   "devDependencies": {
