@@ -7,6 +7,13 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ---
 
+## [3.0.1] - 2024-10-31
+### FIxed
+
+- Vulnerabilities: CVE-2024-4067 Moderate severity
+
+---
+
 ## [3.0.0] - 2024-08-18
 ### Added
 
